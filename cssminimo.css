@@ -108,7 +108,7 @@ input[type="checkbox" i] {
     border: var(--brd);
 }
 .chatbox-title, .chatbox-title a.chat-title {
-    color: #!important;
+    color: transparent !important;
 }
 ::selection{background:var(--gr2); color:#fafafa; text-shadow: none !important}
 #fa_toolbar{display:none;}
@@ -155,7 +155,7 @@ input:focus-visible {
 }
 #tabs a span {
     padding: 2px!important;
-    font-weight:700px;
+    font-weight:700;
 }
 #cp-main {
     border: var(--brd);
@@ -334,8 +334,8 @@ html#sceditor_smilies ::-webkit-scrollbar {
     border-left: var(--brd);
 }
 
-html#sceditor_smilies:: -webkit-scrollbar-thumb {
-    background: vvar(--acc-1);
+html#sceditor_smilies::-webkit-scrollbar-thumb {
+    background: var(--acc-1);
 }
 .h3, h3 {
     padding: 0;
@@ -1450,9 +1450,6 @@ div#changePJ {
   margin-left: 0;
   height: 40px;
 }
- /* Rond au survol */
-.switcheroo__squircle:hover {
-}
 
 /* Image de l'avatar */
 .switcheroo__avatar img {
@@ -1501,7 +1498,7 @@ div#changePJ {
 .switcheroo__squircle:hover:before {
     border-radius: 8px;
     opacity: 1;
-  transform 128ms var(--ease), opacity 64ms var(--ease);
+transition: transform 128ms var(--ease), opacity 64ms var(--ease);
 }
 
 
@@ -1656,7 +1653,6 @@ div#changePJ {
   flex-grow: 1;
   width: 100%;
 }
-.switcheroo__squircle--button:hover {}
 /* MODAL : FENETRE DE CONNEXION --- */
 
 /* Fond de l'afficage connexion */
@@ -1703,7 +1699,6 @@ div#changePJ {
     padding: 12px 20px;
     border-radius: var(--brd-r) var(--brd-r) 0 0;
     font-family: var(--fnt-text);
-    font-size: ;
 }
 /* Formulaire */
 .switcheroo__form {
@@ -1850,8 +1845,6 @@ h1.page-title.jqDrag {
 div#find_username .panel {
     padding: 10px;
 }
-
-p {}
 
 div#find_username .panel .search_username {
     width: 299px !important;
